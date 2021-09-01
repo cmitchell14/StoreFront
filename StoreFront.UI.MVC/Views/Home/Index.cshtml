@@ -2,30 +2,109 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="hero-section wf-section">
+    <div class="container">
+        <div class="hero-wrapper">
+            <h1 class="hero-heading">Serving you <br>since 1989.</h1>
+            <p class="hero-paragraph">Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma City.</p>
+            <div class="hero-button-wrapper">
+                <a href="@Url.Action("Shop","Shop")" class="btn light outline w-button">Shop Merch</a>
+            </div>
+        </div>
+    </div>
 </div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div class="support-section wf-section">
+    <div class="container">
+        <div class="support-top-wrapper">
+            <div class="support-top-left">
+                <div class="support-top-details-text">Ways to support</div>
+                <h2 class="support-top-heading">Support Acme Outdoors.</h2>
+            </div>
+        </div>
+        <div class="support-wrapper">
+            <div class="support-column">
+                <div class="support-square">
+                    <div class="support-square-number">01</div>
+                    <div class="support-square-text">SHOP<br>PRODUCTS</div><img src="~/Content/images/Circle.svg" alt="Circle Decoration in Shop Products Block" class="support-square-image">
+                </div>
+                <p>Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!</p>
+            </div>
+            <div class="support-column">
+                <div class="support-square">
+                    <div class="support-square-number">02</div>
+                    <div class="support-square-text">Donate</div><img src="~/Content/images/Triangle.svg" alt="Triangle Decoration in Donate Block" class="support-square-image triangle">
+                </div>
+                <p>Since we&#x27;ve changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.</p>
+            </div>
+            <div class="support-column">
+                <div class="support-square">
+                    <div class="support-square-number">03</div>
+                    <div class="support-square-text">Buy <br>GIFT CARDS</div><img src="~/Content/images/Rectangle.svg" alt="Rectangle Decoration in Buy Gift Cards Block" class="support-square-image rectangle">
+                </div>
+                <p>Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and family. </p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+</div>
+<div class="safe-section wf-section">
+</div>
+<div class="products-section wf-section">
+    <div class="container">
+        <div class="shop-top-wrapper">
+            <div class="support-top-left">
+                <div class="support-top-details-text">shop products</div>
+                <h2 class="support-top-heading">Open 24/7/365.</h2>
+            </div>
+            <div class="support-top-right"></div>
+        </div>
+        <div class="products-list-wrapper w-dyn-list">
+            <div role="list" class="products-list w-dyn-items">
+                <div role="listitem" class="w-dyn-item">
+                    <div class="shop-item-wrapper">
+                        <a href="#" class="shop-item-link-wrapper w-inline-block">
+                            <div class="shop-image tumbler-1">
+                                <div class="pill-2 badge primary sale">Sale</div>
+                            </div>
+                            <div class="shop-details-wrapper">
+                                <div class="shop-details-left">
+                                    <div class="shop-item-name"></div>
+                                    <div class="price-wrapper">
+                                        <div class="shop-item-price"></div>
+                                        <div class="shop-item-price compare"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="shop-button-wrapper">
+                            <a href="#" class="btn w-button">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-dyn-empty">
+                <div>No items found.</div>
+            </div>
+        </div>
+        <div class="shop-more">
+            <a href="shop.html" class="btn dark w-button">View All Products</a>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+</div>
+<div class="shop-local-section wf-section">
+    <div class="container shop-local-container">
+        <div class="shop-local-wrapper">
+            <div class="shop-local-left"></div>
+            <div class="shop-local-right">
+                <div class="shop-local-content-wrapper">
+                    <h2 class="shop-local-heading">Shop Local.</h2>
+                    <p>We know that during COVID-19, a lot of folks around the city and state are feeling uneasy about the future - we’re not sure what the future holds either.</p>
+                    <p>That said: we know that we love making sure you have the gear you need for your adventures, and we’re going to keep doing that - with our team - until the city tells us we can’t.</p>
+                    <p>But as long as folks like yourself support small businesses around the city, then we’ll be here — every day, making sure your orders arrive on time.</p>
+                    <p>-------</p>
+                    <div>Jane &amp; John Doe</div>
+                    <div><strong>Acme Outdoors</strong></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
